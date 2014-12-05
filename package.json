@@ -6,6 +6,7 @@
   "repository": {
     "url": "git://github.com/driftyco/ionic.git"
   },
+  "main": "dist/js/ionic.npm.js",
   "devDependencies": {
     "canonical-path": "0.0.2",
     "chalk": "^0.4.0",

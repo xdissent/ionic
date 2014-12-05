@@ -31,6 +31,11 @@ module.exports = {
     ' * angular-sanitize.js, angular-ui-router.js,\n'+
     ' * and ionic-angular.js\n'+
     ' */\n\n',
+  npmBundleBanner:
+    '/*!\n' +
+    ' * ionic.npm.js is a concatenation of:\n' +
+    ' * ionic.js and ionic-angular.js\n'+
+    ' */\n\n',
   closureStart: '(function() {\n',
   closureEnd: '\n})();',
 
@@ -83,7 +88,8 @@ module.exports = {
     'fonts/ionicons.eot',
     'fonts/ionicons.svg',
     'fonts/ionicons.ttf',
-    'fonts/ionicons.woff'
+    'fonts/ionicons.woff',
+    'js/npm-exports.js'
   ],
 
   ionicBundleFiles: [
@@ -93,6 +99,12 @@ module.exports = {
     'js/angular/angular-sanitize.js',
     'js/angular-ui/angular-ui-router.js',
     'js/ionic-angular.js'
+  ],
+
+  ionicNpmBundleFiles: [
+    'js/ionic.js',
+    'js/ionic-angular.js',
+    'js/npm-exports.js'
   ],
 
   //Exclamation can be no longer than 14 chars
