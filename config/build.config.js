@@ -44,6 +44,7 @@ module.exports = {
     'js/ionic.js',
 
     // Utils
+    'js/utils/delegateService.js',
     'js/utils/dom.js',
     'js/utils/events.js',
     'js/utils/gestures.js',
@@ -62,6 +63,7 @@ module.exports = {
     'js/views/listView.js',
     'js/views/modalView.js',
     'js/views/sideMenuView.js',
+    'js/views/sliderView.js',
     'js/views/toggleView.js'
   ],
 
