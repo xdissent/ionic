@@ -9,7 +9,7 @@
  * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v1.0.0-beta.13
+ * Ionic, v1.0.0-beta.14
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -25,7 +25,7 @@
 // build processes may have already created an ionic obj
 window.ionic = window.ionic || {};
 window.ionic.views = {};
-window.ionic.version = '1.0.0-beta.13';
+window.ionic.version = '1.0.0-beta.14';
 
 (function (ionic) {
 
@@ -2570,7 +2570,7 @@ var tapLastTouchTarget;
 var tapTouchMoveListener = 'touchmove';
 
 // how much the coordinates can be off between start/end, but still a click
-var TAP_RELEASE_TOLERANCE = 6; // default tolerance
+var TAP_RELEASE_TOLERANCE = 12; // default tolerance
 var TAP_RELEASE_BUTTON_TOLERANCE = 50; // button elements should have a larger tolerance
 
 var tapEventListeners = {
@@ -40906,7 +40906,7 @@ angular.module('ui.router.state')
  * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v1.0.0-beta.13
+ * Ionic, v1.0.0-beta.14
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -44466,8 +44466,8 @@ function($ionicModal, $ionicPosition, $document, $window) {
      * @returns {promise} A promise that will be resolved with an instance of
      * an {@link ionic.controller:ionicPopover} controller (ionicPopover is built on top of $ionicPopover).
      */
-    fromTemplateUrl: function(url, options, _) {
-      return $ionicModal.fromTemplateUrl(url, options, ionic.Utils.extend(POPOVER_OPTIONS, options || {}));
+    fromTemplateUrl: function(url, options) {
+      return $ionicModal.fromTemplateUrl(url, ionic.Utils.extend(POPOVER_OPTIONS, options || {}));
     }
   };
 
@@ -50717,7 +50717,7 @@ IonicModule
  * This is good to do because the template will be cached for very fast loading, instead of
  * having to fetch them from the network.
  *
- ## Caching
+ * ## Caching
  *
  * By default, views are cached to improve performance. When a view is navigated away from, its
  * element is left in the DOM, and its scope is disconnected from the `$watch` cycle. When
