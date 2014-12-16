@@ -124,11 +124,12 @@
 }
 
 @mixin tabs-background($style, $color, $border-color) {
-  &.#{$style} {
+  .#{$style} {
     .tabs,
     &> .tabs{
       background-color: $color;
       background-image: linear-gradient(0deg, $border-color, $border-color 50%, transparent 50%);
+      border-color: $border-color;
     }
   }
 }
@@ -143,7 +144,7 @@
 }
 
 @mixin tabs-color($style, $color) {
-  &.#{$style} {
+  .#{$style} {
     .tab-item {
       color: rgba($color, $tabs-off-opacity);
       opacity: 1;
