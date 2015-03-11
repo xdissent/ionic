@@ -2,7 +2,7 @@
  * Copyright 2014 Drifty Co.
  * http://drifty.com/
  *
- * Ionic, v1.0.0-beta.14
+ * Ionic, v1.0.0-rc.0
  * A powerful HTML5 mobile app framework.
  * http://ionicframework.com/
  *
@@ -2584,6 +2584,7 @@ body.grade-b, body.grade-c {
   overflow: hidden;
   margin-top: -1px;
   padding-top: 1px;
+  margin-bottom: -1px;
   width: auto;
   height: auto; }
 
@@ -2900,7 +2901,11 @@ a.subdued {
   transition: all cubic-bezier(0.36, 0.66, 0.04, 1) 500ms;
   position: absolute;
   bottom: 0;
-  width: 100%; }
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 500px;
+  margin: auto; }
 
 .action-sheet-up {
   -webkit-transform: translate3d(0, 0, 0);
@@ -3221,11 +3226,13 @@ a.subdued {
     right: 5px;
     bottom: 5px; }
 
+.platform-android .nav-bar-has-subheader .bar {
+  border-bottom: 0; }
 .platform-android .bar .back-button .icon:before {
   font-size: 24px; }
 .platform-android .bar .title {
   font-size: 19px;
-  line-height: 43px; }
+  line-height: 44px; }
 
 .bar-light .button {
   border-color: #ddd;
@@ -3459,6 +3466,9 @@ a.subdued {
 
 .bar .back-button.hide, .bar .buttons .hide {
   display: none; }
+
+.nav-bar-tabs-top .bar {
+  background-image: none; }
 
 /**
  * Tabs
@@ -4507,6 +4517,8 @@ ion-tabs.tabs-color-active-dark .tab-item {
     -moz-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .popup-container input, .popup-container textarea {
+    width: 100%; }
 
 .popup-head {
   padding: 15px 10px;
