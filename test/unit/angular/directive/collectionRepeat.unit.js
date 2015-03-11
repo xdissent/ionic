@@ -60,8 +60,6 @@ describe('collectionRepeat', function() {
       $rootScope.list = list;
       $compile(element)(repeaterScope);
       $rootScope.$apply();
-      content.triggerHandler('scroll.init');
-      $rootScope.$apply();
     });
     return element;
   }
